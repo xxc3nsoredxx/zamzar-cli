@@ -23,7 +23,7 @@ if [ ! -r $KEY ]; then
 fi
 
 # Read key into variable
-KEY=$(cat $KEY)
+KEY="$(cat $KEY):"
 
 # Test if input file exists
 if [ ! -r $FILE ]; then
